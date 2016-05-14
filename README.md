@@ -38,7 +38,8 @@ it allocates based on the cost efficiency
 * When there cannot be any cpus allotted. http://localhost:8080/getcost/1/1/0.10. cost_details should be 0 and empty for the user to validate
 * When the config file is not in place. rename the costconfig.yaml to costconfig1.yaml under resources directory and test. Should throw right 
 error message without panicking
-
+* When cpus are passed a float point -  http://localhost:8080/getcost/1/0.45/10. This truncates the cpu to be zero and calculates the number of cpus for the given 10 price.
+* When cpus are passed a float point and price is zero -  http://localhost:8080/getcost/1/0.45/0. Throws the error message price or cpus should be valid
 
 
 
