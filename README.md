@@ -25,7 +25,8 @@ it can provide with $10 for four hours
 * http://localhost:8080/getcost/1/10/2.82 or a combination of both. - This calculates the best possible servers with the cpus user input
 and within the price they have mentioned
 
-
+* Output is in JSON Format
+ 
 Test cases
 * All parameters are valid.  http://localhost:8080/getcost/4/11/10. Should work fine
 * Hours is 0 .  http://localhost:8080/getcost/0/11/0 . Throw an error . Hours should be valid
@@ -44,6 +45,9 @@ error message without panicking
 
 Not done 
 * when the inputs are really large number - Need to handle this case. Left it that practically there would be limited resources. If required, can add this
+
+
+
 
 
 
