@@ -19,6 +19,7 @@ func CalculateCost(w http.ResponseWriter, r *http.Request) {
 	if err!=nil{
 		response, _ := json.Marshal(&models.FatalError{false,503,"Technical Difficulties. Apologize!"})
 		w.Write(response)
+		return
 	}
 	if hours <= 0{
 		response, _ := json.Marshal(&models.FatalError{false,422,"hours  should be valid"})
