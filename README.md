@@ -40,6 +40,7 @@ it allocates based on the cost efficiency
 error message without panicking
 * When cpus are passed a float point -  http://localhost:8080/getcost/1/0.45/10. This truncates the cpu to be zero and calculates the number of cpus for the given 10 price.
 * When cpus are passed a float point and price is zero -  http://localhost:8080/getcost/1/0.45/0. Throws the error message price or cpus should be valid
+* when inputs are strings - http://localhost:8080/getcost/1/0.45/0 - This validates the inputs. Should throw error message inputs should be valid
 
 Not done 
 * when the inputs are really large number - Need to handle this case. Left it that practically there would be limited resources. If required, can add this
